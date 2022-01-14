@@ -10,6 +10,10 @@ html {
 body {
     font-family: 'Poppins', sans-serif;;
     background: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 main {
@@ -140,6 +144,30 @@ main {
 
 .formulario__mensaje--exito-activo {
     display: block;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__enlace {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.footer__enlace:hover {
+    text-shadow: 3px 0px 30px rgb(0, 0, 0);
+}
+
+.line__footer {
+    width: min(600px, 70%);
+    border-top: 2px solid black;
+    margin: auto;
 }
 
 /*------------------- Style Validation -------------------*/
